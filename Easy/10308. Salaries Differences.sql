@@ -11,7 +11,7 @@ FROM db_employee AS employee
 JOIN db_dept AS dept
 ON employee.department_id = dept.id
 )
-
+-- Find absolute salary differences
 SELECT ABS
 (
 -- Max Marketing Salary
@@ -20,3 +20,10 @@ SELECT ABS
 (SELECT MAX(salary) FROM CombinedTable WHERE department = 'engineering')
 )
 AS salary_difference
+
+
+-- Recommended Solution
+
+SELECT ABS(MAX(a.salary) - MAX(b.salary)) AS salary_differences
+FROM db_employee AS a, db_employee AS b
+WHERE a.department_id = 4 AND b.department_id = 1;
