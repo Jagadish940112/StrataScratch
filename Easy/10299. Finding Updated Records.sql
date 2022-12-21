@@ -10,6 +10,7 @@ FROM ms_employee_salary
 GROUP BY id
 ORDER BY id
 
+
 Recommended Solution
 
 SELECT 
