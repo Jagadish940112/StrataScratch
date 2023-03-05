@@ -1,6 +1,6 @@
 # StrataScratch
 
-SQL Coding Questions
+50 **Free** SQL Coding Questions
 
 Group by **Easy**, **Medium**, and **Hard** *difficulty*
 
